@@ -147,25 +147,64 @@
       border-bottom: 2px solid var(--secondary);
       display: inline-block;
     }
+/* Project section styles */
+.projects {
+  margin-top: 60px;
+  padding: 20px;
+}
 
-    .projects .project-list {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 20px;
-    }
+.projects h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #333;
+}
 
-    .project {
-      background-color: var(--card-bg);
-      padding: 20px;
-      border-radius: 10px;
-      transition: transform 0.3s, border 0.3s;
-      border: 2px solid transparent;
-    }
+.project-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+}
 
-    .project:hover {
-      transform: translateY(-5px);
-      border-color: var(--secondary);
-    }
+.project-card {
+  background: #1f1f1f;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.project-card h3 {
+  color: #1976D2;
+  margin-bottom: 10px;
+}
+
+.project-card p {
+  color: #555;
+  margin-bottom: 12px;
+}
+
+.project-card a {
+  text-decoration: none;
+  color: #2196F3;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.project-card a:hover {
+  color: #0d47a1;
+}
 
     .skills ul {
       list-style: none;
@@ -436,21 +475,29 @@
   <section id="projects" class="projects">
     <h2>Projects</h2>
     <div class="project-list">
-      <div class="project">
-        <h3>SmartTask</h3>
-        <p>A to-do app with Firebase integration and real-time sync.</p>
+      <div class="project-card">
+        <img src="image1.png" alt="SmartTask Screenshot">
+        <h3>Hope ice cream</h3>
+        <p>An ice cream website .</p>
+        <a href="https://hopeicecream.netlify.app" target="_blank">View Project →</a>
       </div>
-      <div class="project">
-        <h3>TravelX</h3>
-        <p>Travel booking UI with smooth animations and clean design.</p>
+  
+      <div class="project-card">
+        <img src="image.png" alt="TravelX Screenshot">
+        <h3>WP-Pusher</h3>
+        <p>A website for wp pusher.</p>
+        <a href="https://example.com/travelx" target="_blank">View Project →</a>
       </div>
-      <div class="project">
+  
+      <!-- <div class="project-card">
+        <img src="https://via.placeholder.com/400x200?text=Feedback+Hub" alt="Feedback Hub Screenshot">
         <h3>Feedback Hub</h3>
         <p>User feedback module with screenshot uploads and Firestore storage.</p>
-      </div>
+        <a href="https://example.com/feedbackhub" target="_blank">View Project →</a>
+      </div> -->
     </div>
   </section>
-
+  
   <section>
     <h2>Technical Skills</h2>
     <div>
